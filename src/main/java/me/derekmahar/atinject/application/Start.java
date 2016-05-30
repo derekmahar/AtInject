@@ -10,6 +10,6 @@ public class Start {
 		final ApplicationContext context = new AnnotationConfigApplicationContext(ApplicationConfiguration.class);
 		final Application application = context.getBean(Application.class);
 		final A a1 = application.getA();
-		System.out.println("Name of a1 is " + a1.getName() + ".");
+		System.out.println("Name of a1 is \"" + a1.getName() + "\".");
 	}
 }
